@@ -1,0 +1,33 @@
+{
+  "name": "cookie-policy-jar",
+  "version": "1.0.0",
+  "description": "In-memory server-side cookie jar (RFC 6265 + SameSite + CHIPS)",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist/src"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "pretest": "tsc -p tsconfig.json",
+    "test": "node --test dist/tests/",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "cookie",
+    "jar",
+    "rfc6265",
+    "samesite",
+    "partitioned"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.6.3"
+  }
+}
